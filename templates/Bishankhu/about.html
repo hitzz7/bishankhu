@@ -1,0 +1,25 @@
+{% extends './navbar.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<h2>Health Fact</h2>
+    <div class="about">
+        <div class="about-image">
+            <img src="{% static 'oil.jpg' %}" alt="Health Image">
+        </div>
+        <div class="about-content">
+            <h6>Why mustard oil is good for you ?</h6>
+            <ul>
+                <li><i class="fas fa-water"></i> Boosts energy and relieves fatigue.</li>
+                <li><i class="fas fa-heart"></i> Promotes heart health.</li>
+                <li><i class="fas fa-brain"></i> Enhances brain function and focus.</li>
+                <li><i class="fas fa-leaf"></i> Rich in essential nutrients and antioxidants.</li>
+                <li><i class="fas fa-hands-wash"></i> Beneficial for skin and hair health.</li>
+            </ul>
+        </div>
+    </div>
+    
+
+{% endblock %}

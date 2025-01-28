@@ -1,0 +1,125 @@
+
+{% extends './navbar.html' %}
+{% load static %}
+
+
+{% block title %}Bishankhu{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="image-container">
+        <div class="overlay">
+            <h1>100% Pure Quality</h1>
+            <h2 class="bottom-right">Swet Barahai</h2>
+            <div class="image-center">
+                <img src="{% static "flo.png"%}" alt="Mustard Flower" class="neon-flower">
+            </div>
+            
+            <h2 class="bottom-rightt">Tel Mill</h2>
+            <p class="description">
+                 Made from the finest mustard seeds</p>
+                <p class="description"> Offering a rich, bold flavor and aroma</p>
+                
+            <img src="{% static 'bb.png'%}" alt="img-overlay">
+            <img src="{% static 'tel.png'%}" alt="img-overlay">
+            <img src="{% static 'natural-removebg-preview.png'%}" alt="img-overlay">
+            <img src="{% static 'no-removebg-preview.png'%}" alt="img-overlay">
+            <img src="{% static 'premium-removebg-preview.png'%}" alt="img-overlay">
+            
+            
+            <a href="" class="cta-button">View Our Products</a>
+        </div>
+        <img src="{% static 'a.jpg' %}" alt="Home Banner">
+        
+    </div>
+    <h4>"Tradation in every drop"</h4>
+    <h4>"Pure Mustard oil is healthier for your"</h4>
+    <a href="" class="buttona">View Our Products</a>
+
+    <h2>Our Products</h2>
+    <div class="product">
+        <div class="product-image">
+            <img src="{% static 'p1.png' %}" alt="Product Name">
+        </div>
+        <div class="product-description">
+            <h6>20%off for this Month</h6>
+            <h7>Mustard Oil</h7>
+            
+            
+            
+            <p>
+                This is a brief description of the product. It highlights the features, benefits, and unique selling points. 
+                A perfect choice for your needs.
+            </p>
+            <h8>Quantity 1L</h8>
+            <h9>Price Rs300</h9> 
+            
+            
+            
+            <button class="buy-now">Buy Now</button>
+        </div>
+    </div>
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="caption-left">
+            <p class="image-caption">Bring us mustard seeds</p>
+            <p class="image-caption">and we will provide you with</p>
+            <p class="image-caption">high-quality mustard oil</p>
+            <p class="image-caption">made from them.</p>
+        </div>
+        <img src="{% static 'phul.jpg' %}" alt="Mustard Seeds">
+        <div class="caption-right">
+            <p class="image-captionn">Available from 7 AM to 7 PM</p>
+            <p class="image-captionn">We ensure quick and efficient</p>
+            <p class="image-captionn">service so you can get your</p>
+            <p class="image-captionn">oil within the same day.</p>
+        </div>
+    </div>
+
+    
+    <h3>BISHANKHU</h3>
+    <h2>Health Fact</h2>
+    <div class="about">
+        <div class="about-image">
+            <img src="{% static 'oil.jpg' %}" alt="Health Image">
+        </div>
+        <div class="about-content">
+            <h6>Why Doctor recommends mustard oil?</h6>
+            <ul>
+                <li><i class="fas fa-water"></i> Boosts energy and relieves fatigue.</li>
+                <li><i class="fas fa-heart"></i> Promotes heart health.</li>
+                <li><i class="fas fa-brain"></i> Enhances brain function and focus.</li>
+                <li><i class="fas fa-leaf"></i> Rich in essential nutrients and antioxidants.</li>
+                <li><i class="fas fa-hands-wash"></i> Beneficial for skin and hair health.</li>
+            </ul>
+        </div>
+    </div>
+    <h9>Swet Barahai Tel Mill</h9>
+    
+    <h2>Location</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.707455894556!2d85.3531503!3d27.6172602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM3JzAxLjciTiA4NcKwMjEnMTYuNiJF!5e0!3m2!1sen!2snp!4v1690000000000"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+        
+    
+    
+    
+</body>
+</html>
+
+{% endblock %}

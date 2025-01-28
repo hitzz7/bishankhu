@@ -1,0 +1,24 @@
+{% extends './navbar.html' %}
+{% load static %}
+
+{% block title %}Work{% endblock %}
+
+{% block content %}
+<h2>Our Services</h2>
+    <div class="service-container">
+        <div class="caption-left">
+            <p class="image-caption">Bring us mustard seeds</p>
+            <p class="image-caption">and we will provide you with</p>
+            <p class="image-caption">high-quality mustard oil</p>
+            <p class="image-caption">made from them.</p>
+        </div>
+        <img src="{% static 'phul.jpg' %}" alt="Mustard Seeds">
+        <div class="caption-right">
+            <p class="image-captionn">Available from 7 AM to 7 PM</p>
+            <p class="image-captionn">We ensure quick and efficient</p>
+            <p class="image-captionn">service so you can get your</p>
+            <p class="image-captionn">oil within the same day.</p>
+        </div>
+    </div>
+    <h9>Swet Barahai Tel Mill</h9>
+{% endblock %}

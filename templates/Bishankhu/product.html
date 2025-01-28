@@ -1,0 +1,31 @@
+{% extends './navbar.html' %}
+{% load static %}
+
+{% block title %}Work{% endblock %}
+
+{% block content %}
+<h2>Our Products</h2>
+<div class="product">
+    <div class="product-image">
+        <img src="{% static 'p1.png' %}" alt="Product Name">
+    </div>
+    <div class="product-description">
+        <h6>20%off for this Month</h6>
+        <h7>Mustard Oil</h7>
+        
+        
+        
+        <p>
+            This is a brief description of the product. It highlights the features, benefits, and unique selling points. 
+            A perfect choice for your needs.
+        </p>
+        <h8>Quantity 1L</h8>
+        <h9>Price Rs300</h9> 
+        
+        
+        
+        <button class="buy-now">Buy Now</button>
+    </div>
+</div>
+
+{% endblock %}
