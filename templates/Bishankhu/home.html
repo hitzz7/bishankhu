@@ -3,7 +3,8 @@
 {% load static %}
 
 
-{% block title %}Bishankhu{% endblock %}
+
+{% block title %}Bishankhu Mustard Oil - 100% Pure Quality{% endblock %}
 
 {% block content %}
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Home Page - Bishankhu Mustard Oil</title>
 </head>
 <body>
     <div class="image-container">
@@ -27,43 +28,36 @@
                  Made from the finest mustard seeds</p>
                 <p class="description"> Offering a rich, bold flavor and aroma</p>
                 
-            <img src="{% static 'bb.png'%}" alt="img-overlay">
-            <img src="{% static 'tel.png'%}" alt="img-overlay">
-            <img src="{% static 'natural-removebg-preview.png'%}" alt="img-overlay">
-            <img src="{% static 'no-removebg-preview.png'%}" alt="img-overlay">
-            <img src="{% static 'premium-removebg-preview.png'%}" alt="img-overlay">
+                <img src="{% static 'bb.png'%}" alt="Bishankhu Mustard Oil Logo">
+                <img src="{% static 'tel.png'%}" alt="Tel Mill, where Bishankhu Mustard Oil is produced">
+                <img src="{% static 'natural-removebg-preview.png'%}" alt="Natural ingredients used in Bishankhu Mustard Oil">
+                <img src="{% static 'no-removebg-preview.png'%}" alt="Premium Quality Bishankhu Mustard Oil">
+                <img src="{% static 'premium-removebg-preview.png'%}" alt="Premium Mustard Oil Bottles">
             
             
-            <a href="" class="cta-button">View Our Products</a>
+                <a href="{% url 'store:product' %}" class="cta-button" title="Explore Our Mustard Oil Products">View Our Products</a>
         </div>
-        <img src="{% static 'a.jpg' %}" alt="Home Banner">
+        <img src="{% static 'a.jpg' %}" alt="Bishankhu Mustard Oil Home Banner showcasing our premium quality oil">
         
     </div>
     <h4>"Tradation in every drop"</h4>
     <h4>"Pure Mustard oil is healthier for your"</h4>
-    <a href="" class="buttona">View Our Products</a>
+    <a href="{% url 'store:product' %}" class="buttona" title="Shop Mustard Oil Products">View Our Products</a>
 
     <h2>Our Products</h2>
     <div class="product">
         <div class="product-image">
-            <img src="{% static 'p1.png' %}" alt="Product Name">
+            <img src="{% static 'p1.png' %}" alt="Mustard Oil 1L Bottle - Premium Quality">
         </div>
         <div class="product-description">
-            <h6>20%off for this Month</h6>
-            <h7>Mustard Oil</h7>
-            
-            
-            
+            <h6>20% off for this Month</h6>
+            <h7>Mustard Oil - 1L</h7>
             <p>
-                This is a brief description of the product. It highlights the features, benefits, and unique selling points. 
-                A perfect choice for your needs.
+                This premium mustard oil is made from the finest seeds, offering rich flavor, aroma, and numerous health benefits. Perfect for cooking and daily use.
             </p>
-            <h8>Quantity 1L</h8>
-            <h9>Price Rs300</h9> 
-            
-            
-            
-            <button class="buy-now">Buy Now</button>
+            <h8>Quantity: 1L</h8>
+            <h9>Price: Rs 300</h9>
+            <button class="buy-now" title="Buy Mustard Oil Now">Buy Now</button>
         </div>
     </div>
     <h2>Our Services</h2>
@@ -88,7 +82,7 @@
     <h2>Health Fact</h2>
     <div class="about">
         <div class="about-image">
-            <img src="{% static 'oil.jpg' %}" alt="Health Image">
+            <img src="{% static 'oil.jpg' %}" alt="Health Benefits of Mustard Oil">
         </div>
         <div class="about-content">
             <h6>Why Doctor recommends mustard oil?</h6>

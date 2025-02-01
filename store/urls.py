@@ -4,9 +4,9 @@ app_name = 'store'
 
 urlpatterns = [
     path('',views.home, name="home"),
-    path('/product',views.product, name="product"),
-    path('/service',views.service, name="service"),
-    path('/about',views.about, name="about"),
-    path('/contact',views.contact, name="contact"),
+    path('/Bishankhu-mustard-oil',views.product, name="product"),
+    path('/mustard-oil-service',views.service, name="service"),
+    path('/mustard-oil-about',views.about, name="about"),
+    path('/bishankhu-mustard-oil-contact',views.contact, name="contact"),
     path('/message',views.message, name="message"),
 ]
