@@ -1,15 +1,47 @@
 {% extends './navbar.html' %}
 {% load static %}
 
-{% block title %}Message Bishankhu Mustard oil{% endblock %}
+{% block title %}Message Bishankhu Mustard Oil{% endblock %}
 
 {% block content %}
+<section>
+    <div class="contact-container">
+        <!-- Phone Card -->
+        <div class="card">
+            <div class="card-content">
+                <i class="fas fa-phone-alt"></i>
+                <h3>Phone</h3>
+                <p>01-5560784</p>
+            </div>
+        </div>
+
+        <!-- Email Card -->
+        <div class="card">
+            <div class="card-content">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>bishankhu@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Location Card -->
+        <div class="card">
+            <div class="card-content">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>BadeyGaun-14, Godawari, Lalitpur</p>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
 <section class="message-us-section">
     <h1 class="section-title">Get in Touch</h1>
     <p class="section-description">We'd love to hear from you. Fill out the form below, and we'll get back to you as soon as possible.</p>
     
-    <div class="form-container">
-        <form action="" method="post">
+    <forma>  <!-- custom wrapper -->
+        <forma action="" method="post">
             {% csrf_token %}
             <div class="form-group">
                 <label for="name">Your Name</label>
@@ -29,10 +61,22 @@
             <div class="form-submit">
                 <button type="submit" class="submit-button">Send Message</button>
             </div>
-        </form>
-    </div>
+        </forma>
+    </forma>
 </section>
-<h3>BISHANKHU</h3>
+<div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.707455894556!2d85.3531503!3d27.6172602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDM3JzAxLjciTiA4NcKwMjEnMTYuNiJF!5e0!3m2!1sen!2snp!4v1690000000000"
+            width="100%" 
+            height="600" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
 
 <style>
     body {
@@ -61,22 +105,26 @@
         color: #666;
     }
 
-    .form-container {
+    /* Style the custom wrapper forma */
+    forma {
+        display: block;
         background-color: #ffffff;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 100%;
+        margin: 0 auto 40px auto;
+        text-align: left;
     }
 
-    .form-container:hover {
+    forma:hover {
         transform: translateY(-5px);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
     .form-group {
         margin-bottom: 20px;
-        text-align: left;
     }
 
     .form-group label {
@@ -138,14 +186,96 @@
             font-size: 1rem;
         }
 
-        .form-container {
+        forma {
             padding: 20px;
         }
 
         .submit-button {
             font-size: 1rem;
             padding: 10px 20px;
+            width: 100%;
         }
     }
+</style>
+<style>
+/* Container for 3 cards */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* From Uiverse.io by eslam-hany */
+.card {
+    position: relative;
+    width: 220px;
+  height: 320px;
+  
+    background: #3b6403;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.card-content {
+    z-index: 1;
+}
+
+.card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.card p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hover effect corners */
+.card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    background-color: #ffd450;
+    transition: all 0.5s;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover::after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.card:hover::after {
+    background-color: #ffd450;
+}
 </style>
 {% endblock %}
