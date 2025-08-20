@@ -10,7 +10,7 @@
     <meta name="keywords" content="mustard oil, pure mustard oil, organic oil, healthy cooking oil, Bishankhu,kathmandu, Nepal">
     <meta name="google-site-verification" content="OYA80neXCD2vRp90dC9ikXRlF-71c22Go1s_CQyc_0M" />
     
-    <link rel="icon" type="image/png" sizes="64x64" href="{% static 'bishankhu.png' %}">
+    <link rel="icon" type="image/png" sizes="64x64" href="{% static 'bbthumb.png' %}">
 
 
     <link rel="stylesheet" href="{% static 'navbar.css' %}">
@@ -44,7 +44,7 @@
         <nav>
             <ul id="navbar" class="navbar">
                 <li><a href="{% url 'store:home'%}" title="Bishankhu Home">Home</a></li>
-                <li><a href="{% url 'store:product'%}" title="View Our Mustard Oil Products">Product</a></li>
+                <li><a href="{% url 'store:product'%}" title="View Our Mustard Oil Products">Mustard Oil</a></li>
                 <li><a href="{% url 'store:service'%}" title="Explore Our Mustard Oil Services">Service</a></li>
                 <li><a href="{% url 'store:about'%}" title="Learn About Bishankhu Mustard Oil Brand">About</a></li>
                 
@@ -83,10 +83,10 @@
             </div>
             <div class="col">
                 <h4>Links<div class="underline"><span></span></div></h4>
-                <p><a href="#">Home</a></p>
-                <p><a href="#">Mustard Oil</a></p>
-                <p><a href="#">Services</a></p>
-                <p><a href="#">About</a></p>
+                <p><a href="{% url 'store:home'%}">Home</a></p>
+                <p><a href="{% url 'store:product'%}">Mustard Oil</a></p>
+                <p><a href="{% url 'store:service'%}">Services</a></p>
+                <p><a href="{% url 'store:about'%}">About</a></p>
             </div>
             <div class="col">
                 <h4>Newsletter<div class="underline"><span></span></div></h4>

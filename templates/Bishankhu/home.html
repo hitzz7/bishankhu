@@ -32,7 +32,7 @@
             
                 <a href="{% url 'store:product' %}" class="cta-button" title="Explore Our Mustard Oil Products">View Our Products</a>
         </div>
-        <video autoplay muted loop playsinline  >
+        <video autoplay muted loop playsinline poster="{% static 'bishankhubg.png'%}" >
             <source src="{% static 'must3.mp4' %}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -66,7 +66,7 @@
             <p class="image-caption">high-quality mustard oil</p>
             <p class="image-caption">made from them.</p>
         </div>
-        <img src="{% static 'phul.jpg' %}" alt="Mustard Seeds">
+        <img src="{% static 'seed.jpg' %}" alt="Mustard Seeds">
         <div class="caption-right">
             <p class="image-captionn">Available from 7 AM to 7 PM</p>
             <p class="image-captionn">We ensure quick and efficient</p>
@@ -131,10 +131,10 @@
             <p>Located in Badey Gaun, our mill was started by our grandfather and has preserved traditional methods for generations, making Bishankhu Mustard Oil a trusted local name.
         </p>
         
-        <button class="buy-now">about us</button>
+        <button class="buy-now" style="margin-left:500px;margin-top:-200px;">about us</button>
     </div>
     <div class="about-imagee">
-        <img src="{% static 'oil.jpg' %}" alt="Bishankhu Mustard Oil Bottle">
+        <img src="{% static 'bottle.png' %}" alt="Bishankhu Mustard Oil Bottle">
     </div>
 </section>
 
