@@ -25,8 +25,9 @@ SECRET_KEY = 'django-insecure-9gpg(zy8f*0z)=^rcv-n6h7((i%xedvxab@iaz$0$7jh6&y2+p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','bishankhu.hitzz.co', '192.168.1.77']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost','bishankhu.com.np','www.bishankhu.com.np' ,'192.168.1.77']
 
+SITE_ID = 1
 
 # Application definition
 
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     'store',
 ]
 
